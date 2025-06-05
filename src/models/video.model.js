@@ -33,9 +33,9 @@ const videoSchema = new Schema(
         },
         owner: {
             type: Schema.Types.ObjectId,
-            ref: "Uer"
+            ref: "User"
         }
-    }
+    },
 )
 
 videoSchema.plugin(mongooseAggregatePaginate)
